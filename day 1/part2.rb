@@ -16,8 +16,8 @@ elves =[]
 current_elf = {number: 0, calories:0}
 lines.each_with_index do |line,idx|
     if line.strip!.empty?
-       elves = update_elves(elves,current_elf) 
-       current_elf = {number: current_elf[:number]+1, calories:0}
+        elves = update_elves(elves,current_elf) 
+        current_elf = {number: current_elf[:number]+1, calories:0}
     else
         current_elf[:calories] +=line.to_i
     end
